@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thread — The Aero Forum</title>
+        <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+>
+    <link rel="icon" type="image/png" href="assets/favicon-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="aero-background">
+
+        <div class="sun-flare"></div>
+
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+        <div class="bubble bubble-5"></div>
+
+        <div class="aero-glow"></div>
+
+    </div>
+
+
+    <main class="thread-page">
+
+        <div class="thread-window">
+
+            <nav class="aero-navbar">
+
+                <a href="index.html" class="forum-logo">
+                    The Aero Forum
+                </a>
+
+                <div
+                    class="nav-actions"
+                    id="auth-nav">
+                </div>
+
+            </nav>
+
+
+            <div class="thread-content">
+
+                <!-- Breadcrumb -->
+
+                <div
+                    id="thread-breadcrumb"
+                    class="category-breadcrumb">
+                    Home → Categories → Loading...
+                </div>
+
+
+                <!-- Thread header -->
+
+                <header class="thread-main-header">
+
+                    <div
+                        id="thread-featured"
+                        class="thread-featured">
+                    </div>
+
+                    <h1 id="thread-title">
+                        Loading thread...
+                    </h1>
+
+                    <div
+                        id="thread-meta"
+                        class="thread-main-meta">
+                        Loading...
+                    </div>
+
+                </header>
+
+
+                <!-- Original post -->
+
+                <section id="thread-posts">
+
+                    <article class="forum-post">
+
+                        <aside class="post-author">
+
+                            <img
+                                id="original-avatar"
+                                class="post-avatar"
+                                src="assets/default-avatar.png"
+                                alt="Author"
+                            >
+
+                            <strong id="original-author">
+                                Loading...
+                            </strong>
+
+                            <span id="original-rank">
+                                🌱 Newbie
+                            </span>
+
+                        </aside>
+
+
+                        <div class="post-content">
+
+                            <div
+                                id="original-content"
+                                class="post-text">
+                                Loading...
+                            </div>
+
+                            <div
+                                id="original-date"
+                                class="post-date">
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- Replies -->
+
+                <section class="replies-section">
+
+                    <h2 class="section-heading">
+                        💬 Replies
+                    </h2>
+
+                    <div id="reply-list">
+
+                        <div class="thread-loading">
+                            Loading replies...
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Reply box -->
+
+                <section
+                    id="reply-section"
+                    class="reply-section">
+
+                    <h2 class="section-heading">
+                        Write a Reply
+                    </h2>
+
+                    <form id="reply-form">
+
+                        <textarea
+                            id="reply-content"
+                            rows="6"
+                            maxlength="10000"
+                            placeholder="Write your reply..."
+                            required
+                        ></textarea>
+
+
+                        <div
+                            id="reply-message"
+                            class="thread-message">
+                        </div>
+
+
+                        <div class="reply-actions">
+
+                            <button
+                                type="submit"
+                                class="aero-button">
+                                Post Reply 🌊
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/thread.js"></script>
+
+</body>
+
+</html>
