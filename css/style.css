@@ -2698,3 +2698,287 @@ textarea {
             transparent
         );
 }
+
+/* ========================================
+   ERROR PAGES
+   ======================================== */
+
+.error-page {
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+.error-window {
+    width: min(900px, 100%);
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.27);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 50px rgba(0, 190, 255, 0.5),
+        0 25px 70px rgba(0, 70, 140, 0.35);
+}
+
+.error-content {
+    padding: 70px 30px;
+
+    text-align: center;
+}
+
+.error-code {
+    margin-bottom: 10px;
+
+    color: #064b73;
+
+    font-size: clamp(5rem, 15vw, 9rem);
+    font-weight: 900;
+    line-height: 0.9;
+
+    text-shadow:
+        0 2px 4px white,
+        0 0 15px rgba(120, 230, 255, 0.9),
+        0 0 35px rgba(0, 180, 255, 0.55);
+}
+
+.error-content h1 {
+    margin: 20px 0 10px;
+
+    color: #064b73;
+
+    font-size: 2rem;
+
+    text-shadow:
+        0 1px 2px white,
+        0 0 10px rgba(0, 190, 255, 0.5);
+}
+
+.error-content p {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: #07577f;
+
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.error-actions {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 28px;
+}
+
+/* ========================================
+   ERROR PAGES — 403 / 404 / 500
+   ======================================== */
+
+.error-page {
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+.error-window {
+    width: min(900px, 100%);
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.27);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 50px rgba(0, 190, 255, 0.5),
+        0 25px 70px rgba(0, 70, 140, 0.35);
+}
+
+.error-content {
+    padding: 70px 30px;
+
+    text-align: center;
+}
+
+.error-code {
+    margin-bottom: 15px;
+
+    color: #064b73;
+
+    font-size: clamp(5rem, 15vw, 9rem);
+    font-weight: 900;
+    line-height: 0.9;
+
+    text-shadow:
+        0 2px 4px rgba(255, 255, 255, 0.95),
+        0 0 15px rgba(120, 230, 255, 0.9),
+        0 0 35px rgba(0, 180, 255, 0.55),
+        0 0 70px rgba(0, 150, 255, 0.3);
+}
+
+.error-content h1 {
+    margin: 20px 0 10px;
+
+    color: #064b73;
+
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    font-weight: 800;
+
+    text-shadow:
+        0 1px 2px white,
+        0 0 10px rgba(0, 190, 255, 0.5);
+}
+
+.error-content p {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    color: #07577f;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+
+    text-shadow:
+        0 1px 2px rgba(255, 255, 255, 0.75);
+}
+
+.error-actions {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.error-actions .aero-button {
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+
+    .error-page {
+        padding: 20px;
+    }
+
+    .error-content {
+        padding: 50px 20px;
+    }
+
+    .error-code {
+        font-size: 6rem;
+    }
+
+    .error-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .error-content p {
+        font-size: 0.95rem;
+    }
+
+    .error-actions .aero-button {
+        width: 100%;
+    }
+}
+
+/* Error pages */
+.error-page {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.error-page h1 {
+    font-size: 96px;
+    margin: 0;
+    line-height: 1;
+}
+
+.error-page h2 {
+    font-size: 28px;
+    margin: 15px 0 10px;
+}
+
+.error-page p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.error-page a {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+/* =========================
+   ERROR PAGES
+   ========================= */
+
+.error-page {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.error-page h1 {
+    margin: 0;
+    font-size: 96px;
+    line-height: 1;
+}
+
+.error-page h2 {
+    margin: 15px 0 10px;
+    font-size: 28px;
+}
+
+.error-page p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.error-page a {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+}
